@@ -1,0 +1,125 @@
+.ecosystem-section {
+  padding: 60px 0 80px;
+  background-color: var(--bg-white, #ffffff);
+}
+
+.ecosystem-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Left Column */
+.ecosystem-heading {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--text-primary, #424242);
+  margin: 0 0 32px;
+  letter-spacing: -0.3px;
+}
+
+.ecosystem-props {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.value-prop-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.value-prop-title {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--text-primary, #424242);
+  margin: 0 0 8px;
+}
+
+.value-prop-desc {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-secondary, #666666);
+  margin: 0;
+}
+
+/* Right Column */
+.ecosystem-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ecosystem-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.ecosystem-image {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  display: block;
+}
+
+.ecosystem-links-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.ecosystem-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--primary-blue, #387ed1);
+  text-decoration: none;
+  transition: color 0.2s ease, gap 0.2s ease;
+}
+
+.ecosystem-link:hover {
+  color: var(--primary-blue-hover, #2260a9);
+  gap: 12px;
+}
+
+.arrow-icon {
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.ecosystem-link:hover .arrow-icon {
+  transform: translateX(2px);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .ecosystem-section {
+    padding: 40px 0 60px;
+  }
+
+  .ecosystem-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .ecosystem-heading {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .ecosystem-image {
+    max-width: 100%;
+  }
+
+  .ecosystem-links-row {
+    gap: 24px;
+  }
+}

@@ -1,0 +1,94 @@
+.education-section {
+  padding: 60px 0 80px;
+  background-color: var(--bg-white, #ffffff);
+}
+
+.education-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Left Column */
+.education-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.education-image {
+  max-width: 440px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Right Column */
+.education-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.education-heading {
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--text-primary, #424242);
+  margin: 0 0 32px;
+  letter-spacing: -0.3px;
+}
+
+.education-topic {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+
+.education-topic:last-child {
+  margin-bottom: 0;
+}
+
+.education-topic-text {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--text-secondary, #666666);
+  margin: 0 0 10px;
+}
+
+.education-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--primary-blue, #387ed1);
+  text-decoration: none;
+  transition: color 0.2s ease, gap 0.2s ease;
+  width: fit-content;
+}
+
+.education-link:hover {
+  color: var(--primary-blue-hover, #2260a9);
+  gap: 12px;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  .education-section {
+    padding: 50px 0;
+  }
+
+  .education-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .education-heading {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+
+  .education-image {
+    max-width: 320px;
+  }
+}
